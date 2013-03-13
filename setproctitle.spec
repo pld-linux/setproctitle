@@ -1,12 +1,12 @@
 Summary:	A setproctitle() implementation
 Name:		setproctitle
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:	LGPL or BSD
 Group:		Applications/System
 # ftp://ftp.altlinux.org/pub/distributions/ALTLinux/Sisyphus/files/SRPMS
 Source0:	%{name}-%{version}.tar
-# Source0-md5:	7d59294eedb80127c62d01e6a6f2fd8f
+# Source0-md5:	2677fb7e07f1a068fe079ec79bfae558
 URL:		http://sisyphus.ru/srpm/Sisyphus/setproctitle/get
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,8 @@ Header files and development documentation for setproctitle.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -fPIC"
+	RPM_OPT_FLAGS="%{rpmcppflags} %{rpmcflags}"
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
