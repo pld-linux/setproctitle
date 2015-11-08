@@ -2,7 +2,7 @@ Summary:	A setproctitle() implementation
 Summary(pl.UTF-8):	Implementacja funkcji setproctitle()
 Name:		setproctitle
 Version:	0.3.2
-Release:	2
+Release:	3
 License:	LGPL v2.1+ (implementation), BSD (man page)
 Group:		Libraries
 # ftp://ftp.altlinux.org/pub/distributions/ALTLinux/Sisyphus/files/SRPMS
